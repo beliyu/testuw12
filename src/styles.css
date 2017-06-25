@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "D7MBI";
+  src: url("./assets/DSEG7Modern-BoldItalic.woff") format('woff');
+}
+body {
+  background-color: #707070
+}

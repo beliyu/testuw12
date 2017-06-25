@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<div id="main" class="container">
+    <h1 class="D7MBI">
+      {{title}}
+    </h1>
+    <span class="D7MBI BGr">
+      {{title0}}
+    </span>
+  <div id="key">
+    <div class="row">
+      <span class="col-xs-6" (click)="start()" *ngIf="!w">
+        <i class="fa fa-play"> </i> Play</span>
+      <span class="col-xs-6" (click)="pauza()" *ngIf="w">
+        <i class="fa fa-pause"> </i> Pause</span>
+      <span class="col-xs-3" (click)="set()">
+        <i class="fa fa-clock-o"></i>
+      </span>
+      <span class="col-xs-3" (click)="reset()">
+        <i class="fa fa-trash"></i>
+      </span>
+    </div>
+  </div>
+  <div class="tabl">
+    <p *ngFor="let ev of events">
+      <span class="D7MBI"> {{ev}} </span>
+      <span class="pull-right rem" (click)="rem(ev)">REMOTE</span>
+    </p>
+  </div>
+</div>
